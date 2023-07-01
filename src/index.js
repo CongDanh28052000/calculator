@@ -1,15 +1,16 @@
 import React from 'react' // nạp thư viện react
 import ReactDOM from 'react-dom' // nạp thư viện react-dom
+import { BrowserRouter as Router } from 'react-router-dom';
+import App from './App';
+import './style.css';
 
-// Tạo component App
-function App() {
-    return (
-        <div>
-            <h1>Hello world </h1>
-        </div>
-    )
-}
+
 
 // Render component App vào #root element
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(
+    <Router>
+        <App />
+    </Router>    
+
+, document.getElementById('root'))
 

@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: Helvetica, sans-serif;
+}
+a,li {
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+:root {
+  --digit-keys: #505050;
+  --operator-keys: #FF9500;
+  --background-color: #1C1C1C;
+  --function-keys: #a2a2a2;
+}
+
+.calculator-wrap {
+  display: flex;
+  margin:30px;
+}
+
+.calculator {
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 1px solid #a2a2a2;
+  box-shadow: 5px 5px 5px #a2a2a2;
+  position: relative;
+}
+
+.calculator-screen {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #a2a2a2;
+  padding: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+.calculator-screen input {
+  background-color: transparent;
+  border: 1px solid transparent;
+  width: 100%;
+  padding: 15px;
+  font-size: 30px;
+}
+
+
+.calculator-keyboard {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+  
+
+
+}
+
+.calculator-row-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.calculator-row-btn:first-child .calculator-btn{
+  background-color: #505050;
+}
+.calculator-row-btn:first-child .calculator-btn-operator {
+  background-color: #FF9500;
+}
+
+.calculator-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a2a2a2;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 30px;
+  color: #fff;
+
+}
+.calculator-btn:hover{
+  opacity: 0.8;
+}
+
+.calculator-btn-operator {
+  
+  background-color: #FF9500;
+}
+
+.calculator-btn-l {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-color: #a2a2a2;
+  border-radius: 30px;
+}
+.calculator-btn-l:hover{
+ opacity: 0.8;
+}
+
+.btn-history {
+  color: #fff;
+  background-color: #4c00ffea;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  height: 46px;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  justify-content: center;
+}
+.btn-history a{
+  color: #fff;
+  border-radius: 5px;
+  padding: 15px 100px;
+}
+.tille-history{
+  color: #FF9500;
+  margin-left: 50px;
+}
+.list-history{
+  margin-left: 50px;
+}
