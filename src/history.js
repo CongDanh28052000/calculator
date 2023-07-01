@@ -6,7 +6,7 @@ const History = ({ calculations }) => {
       <h2 className='tille-history'> Calculation History </h2>
       <ul className='list-history'>
         {calculations.map((calculation, index) => (
-          <li key={index}>{calculation}</li>
+          <li key={index}>{"phép tính thứ "}{index + 1} : {calculation} = {eval(calculation)}</li>
         ))}
       </ul>
     </div>

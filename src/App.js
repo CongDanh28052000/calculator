@@ -25,7 +25,7 @@ const App = () => {
       setResult(eval(result).toString()); 
       setCalculations([...calculations, result]);
     } catch (error) {
-      setResult('0');
+      setResult('error');
     }
   };
   return (
